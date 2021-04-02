@@ -19,7 +19,7 @@ public class MeuPrimeiroController {
 	
 	@GetMapping("/hello")
 	@ResponseBody
-	public String hello() {
+	public String hello() throws Exception {
 		Cliente joao = new Cliente("João", "joao@xyz.com", "61991374444");
 		
 		ativacaoClienteService.ativar(joao);
